@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html,
+            body,
+            #c {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <pre id="message">Loading babylon.js ...</pre>
+        <script src="babylon.js"></script>
+        <script>document.getElementById("message").innerHTML = "Press to start";</script>
+        <button id="b">Enter VR</button>
+        <canvas id="c"></canvas>
+        <script src="main.js"></script>
+    </body>
+</html>
