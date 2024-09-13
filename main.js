@@ -458,7 +458,7 @@
         try {
             message.innerHTML = "Loading ...";
             button.style.display="none";
-            //if (!await navigator.xr.isSessionSupported("immersive-vr")) throw "'immersive-vr' not supported";
+            if (!await navigator.xr.isSessionSupported("immersive-vr")) throw "'immersive-vr' not supported";
             scene = await createScene();
             engine.runRenderLoop(() => scene.render());
             message.style.display="none";
